@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 import { FcGoogle } from 'react-icons/fc';
-import { FaGithub } from 'react-icons/fa';
+import { FaFacebook, FaGithub } from 'react-icons/fa';
 import { useCallback, useState } from 'react';
 import { useForm, FieldValues, SubmitHandler } from 'react-hook-form';
 import useRegisterModal from '@/app/Hooks/useRegisterModal';
@@ -10,6 +10,7 @@ import Modal from './Modal';
 import Heading from '../Heading';
 import Input from '../Input';
 import Button from '../Button';
+import { FaLinkedin } from 'react-icons/fa6';
 
 const RegisterModal = () => {
 
@@ -43,7 +44,6 @@ const RegisterModal = () => {
   const bodyContent = (
     <div className='flex flex-col gap-4'>
       <Heading title='Welcome to Airbnb' subTitle='Create an Account'/>
-      <Input />
     </div>
   )
 
@@ -52,6 +52,8 @@ const RegisterModal = () => {
       <div>
         <Button label={"Continue with Google"} onClick={() => {}} outline icon={FcGoogle}/>
         <Button label={"Continue with Google"} onClick={() => {}} outline icon={FaGithub}/>
+        <Button label={"Continue with Linkedin"} onClick={() => {}} outline icon={FaLinkedin}/>
+        <Button label={"Continue with Facebook"} onClick={() => {}} outline icon={FaFacebook}/>
       </div>
       <div className='text-sm font-semibold text-center my-3 text-neutral-800 hover:underline'>
         Already have an account?
