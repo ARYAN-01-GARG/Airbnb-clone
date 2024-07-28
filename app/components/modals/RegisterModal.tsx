@@ -9,6 +9,7 @@ import useRegisterModal from '@/app/Hooks/useRegisterModal';
 import Modal from './Modal';
 import Heading from '../Heading';
 import Input from '../Input';
+import Button from '../Button';
 
 const RegisterModal = () => {
 
@@ -46,6 +47,18 @@ const RegisterModal = () => {
     </div>
   )
 
+  const footer = (
+    <div className='flex flex-col my-4'>
+      <div>
+        <Button label={"Continue with Google"} onClick={() => {}} outline icon={FcGoogle}/>
+        <Button label={"Continue with Google"} onClick={() => {}} outline icon={FaGithub}/>
+      </div>
+      <div className='text-sm font-semibold text-center my-3 text-neutral-800 hover:underline'>
+        Already have an account?
+      </div>
+    </div>
+  )
+
 
   return (
     <Modal 
@@ -56,6 +69,7 @@ const RegisterModal = () => {
       actionLabel='Continue'
       onSubmit={handleSubmit(onSubmit)}
       body={bodyContent}
+      footer={footer}
     />
   )
 }
