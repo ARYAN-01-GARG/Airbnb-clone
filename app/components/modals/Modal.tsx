@@ -87,6 +87,7 @@ const Modal:React.FC<ModalProps> = ({
       >
         <div 
           className="
+            mt-[12%]
             relative
             w-full
             md:w-4/6
