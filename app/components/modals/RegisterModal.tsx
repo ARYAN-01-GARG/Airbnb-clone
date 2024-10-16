@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 import { FcGoogle } from 'react-icons/fc';
-import { AiFillGithub } from 'react-icons/ai';
+import { AiFillFacebook, AiFillGithub } from 'react-icons/ai';
 import { useState } from 'react';
 import { useForm, FieldValues, SubmitHandler } from 'react-hook-form';
 import useRegisterModal from '@/app/Hooks/useRegisterModal';
@@ -11,6 +11,7 @@ import Heading from '../Heading';
 import Input from '../inputs/Input';
 import Button from '../Button';
 import toast from 'react-hot-toast';
+import { SiFacebook } from 'react-icons/si';
 
 const RegisterModal = () => {
 
@@ -90,7 +91,7 @@ const RegisterModal = () => {
         icon={FcGoogle}
         onClick={() => console.log('Google')}
       />
-      <Button 
+      <Button
         outline
         label='Continue with Github'
         icon={AiFillGithub}

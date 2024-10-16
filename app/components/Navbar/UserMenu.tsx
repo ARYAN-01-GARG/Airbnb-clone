@@ -64,7 +64,7 @@ function UserMenu() {
                 <div className="flex flex-col cursor-pointer">
                     <>
                       <MenuItem  
-                            onClick={() => {}}
+                            onClick={registerModal.onOpen}
                             label="Login"
                        />
                       <MenuItem  
